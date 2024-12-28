@@ -1,0 +1,26 @@
+GET http://localhost:5073/games/2
+
+###
+GET http://localhost:5073/games
+
+###
+POST http://localhost:5073/games
+Content-Type: application/json
+
+{
+    "name":"FC25",
+    "genre":"Sports",
+    "price":1500.00,
+    "releaseDate":"2024-08-12"
+}
+
+###
+PUT http://localhost:5073/games/2
+Content-Type: application/json
+
+{
+    "name":"COD",
+    "genre":"Action",
+    "price":3000.00,
+    "releaseDate":"2023-08-12"
+}
